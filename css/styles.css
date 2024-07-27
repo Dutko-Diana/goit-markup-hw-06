@@ -27,11 +27,6 @@ img {
     margin: 0 auto;
 }
 
-.section {
-    margin: 0;
-    padding: 120px 156px;
-}
-
 a {
 text-decoration: none;
 }
@@ -159,11 +154,6 @@ h3 {
     letter-spacing: 0.04em;
     color: #fff;
     line-height: 1.5;
-    display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
         border: none;
         border-radius: 4px;
             padding: 16px 32px;
@@ -286,8 +276,6 @@ h3 {
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
         padding: 32px 16px;
-        width: 360px;
-        height: 120px;
 }
 
 .bottom {
