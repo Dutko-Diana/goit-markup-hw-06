@@ -301,9 +301,6 @@ h3 {
 
 .paragraph-bottom {
     color: #f4f4fd;
+    max-width: 264px;
 }
 
-.bottom-div {
-    width: 264px;
-    margin-left: 156px;
-}
