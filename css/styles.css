@@ -380,7 +380,7 @@ box-shadow:  1px 6px rgba(46, 47, 66, 0.08),
         padding: 40px 32px;
 }
 
-.portfolio-wrapper:hover .overlay {
+.portfolio-item:hover .overlay {
     transform: translateY(0);
 }
 
