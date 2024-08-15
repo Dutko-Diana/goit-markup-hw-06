@@ -504,7 +504,7 @@
     </main>
     <footer class="bottom">
       <div class="container footer-container">
-        <div>
+        <div class="footer-logo-wrapper">
           <a class="logo-bottom" href="./index.html"
             >Web<span class="logo-part-bottom">Studio</span></a
           >
@@ -563,7 +563,56 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label for="footer-form" class="footer-form-label">Subscribe</label>
+          <div class="form-wrap">
+            <input
+              type="email"
+              id="footer-form"
+              name="email"
+              placeholder="E-mail"
+              class="footer-form-input"
+            />
+            <button type="submit" class="footer-form-btn">
+              Subscribe
+              <svg width="24" height="24" class="footer-form-icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+
+    <nav class="modal-overlay">
+      <nav class="modal">
+        <form>
+          <button>
+            <svg width="8" height="8" class="modal-close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p>Leave your contacts and we will call you back</p>
+          <label>
+            <input type="text" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label
+            ><input type="text" />
+            <svg width="18" height="24" class="modal-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg> </label
+          ><label
+            ><input type="text" />
+            <svg width="18" height="24" class="modal-icon">
+              <use href="./images/icons.svg#icon-email"></use></svg></label
+          ><label><textarea name="comment"></textarea></label
+          ><label><input type="text" /></label>
+          <button type="submit"></button>
+        </form>
+      </nav>
+    </nav>
   </body>
 </html>
