@@ -563,56 +563,54 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <label for="footer-form" class="footer-form-label">Subscribe</label>
-          <div class="form-wrap">
-            <input
-              type="email"
-              id="footer-form"
-              name="email"
-              placeholder="E-mail"
-              class="footer-form-input"
-            />
+
+        <div class="subscribe">
+          <p class="footer-form-label">Subscribe</p>
+          <form class="footer-form">
+            <label>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-form-input"
+              />
+            </label>
             <button type="submit" class="footer-form-btn">
               Subscribe
               <svg width="24" height="24" class="footer-form-icon">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <nav class="modal-overlay">
-      <nav class="modal">
-        <form>
-          <button>
-            <svg width="8" height="8" class="modal-close-icon">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <p>Leave your contacts and we will call you back</p>
-          <label>
-            <input type="text" />
-            <svg width="18" height="18" class="modal-icon">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </label>
-          <label
-            ><input type="text" />
-            <svg width="18" height="24" class="modal-icon">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg> </label
-          ><label
-            ><input type="text" />
-            <svg width="18" height="24" class="modal-icon">
-              <use href="./images/icons.svg#icon-email"></use></svg></label
-          ><label><textarea name="comment"></textarea></label
-          ><label><input type="text" /></label>
-          <button type="submit"></button>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-btn">
+          <svg width="8" height="8" class="modal-btn-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-wrapper">
+            <label for="user_name" class="modal-label">Name</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="user_name"
+                name="user_name"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
         </form>
-      </nav>
-    </nav>
+      </div>
+    </div>
   </body>
 </html>
