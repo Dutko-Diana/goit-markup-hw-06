@@ -686,12 +686,14 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
             letter-spacing: 0.04em;
 
             display: block;
-
-            margin-bottom: 16px;
 }
 
 .modal-textarea:focus {
     border-color: #4d5ae5;
+}
+
+.modal-comment {
+    margin-bottom: 16px;
 }
 
 .modal-textarea::placeholder {
@@ -701,3 +703,76 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
 }
+
+.modal-checkbox {
+    margin-bottom: 24px;
+}
+
+.checkbox:checked + .checkbox-label > .custom-checkbox {
+background-color: #404bbf;
+border-color: #404bbf;
+}
+
+.checkbox-label {
+    cursor: pointer;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+.custom-checkbox {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 8px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon {
+    fill: #f4f4fd;
+}
+
+.privacy-policy {
+        line-height: 1.33333;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+}
+
+.modal-submit-btn {
+    display: block;
+    cursor: pointer;
+
+    border-radius: 4px;
+    border: none;
+        padding: 16px 32px;
+        min-width: 169px;
+        min-height: 56px;
+
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: #4d5ae5;
+
+            font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: #fff;
+
+                margin: 0 auto;
+
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+    background: #404bbf;
+}
+
