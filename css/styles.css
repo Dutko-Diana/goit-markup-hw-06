@@ -74,6 +74,11 @@ h3 {
         line-height: 1.2;
 }
 
+picture {
+    flex-shrink: 0;
+    width: 100%;
+}
+
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -88,85 +93,42 @@ h3 {
         text-transform: uppercase;
         text-decoration: none;
         color: #4d5ae5;
-        margin-right: 76px;
+        padding: 16px 0;
+        display: block;
 }
 
 .logo-part {
     color: #2e2f42;
 }
 
-.navigation {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+.navigation,
+.contacts {
+    display: none;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
+.burger-icon {
+    fill: #2f2f37;
 }
 
-.contacts-list {
-    display: flex;
-    gap: 40px;
-}
-
-.headcont {
+.header-container {
     display: flex;
     justify-content: space-between;
-}
-
-.navigation-item {
-    font-weight: 500;
-        font-size: 16px;
-        color: #2e2f42;
-        padding: 24px 0px;
-        transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-active {
-    position: relative;
-    color: #404bbf;
-}
-
-.item-active::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-.navigation-item:hover,
-.navigation-item:focus {
-    color: #404bbf;
+    align-items: center;
 }
 
 .contacts {
     font-style: normal;
 }
 
-.address-link {
-    font-weight: 400;
-        font-size: 16px;
-        color: #434455;
-        transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.burger-btn {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
 
-.address-link:hover,
-.address-link:focus {
-    color: #404bbf;
-}
-
-.address-item {
-    padding: 24px 0px;
+.burger-icon {
+    display: block;
 }
 
 .start {
@@ -840,6 +802,83 @@ fill: #f4f4fd;
         padding: 0 16px;
     }
 
+    .burger-btn {
+        display: none;
+    }
+
+    .navigation {
+    display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        }
+
+    .logo {
+        margin-right: 120px;
+        padding: 24px 0;
+    }
+
+        .navigation-item {
+            font-weight: 500;
+            font-size: 16px;
+            color: #2e2f42;
+            padding: 24px 0px;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+.item-active {
+    position: relative;
+    color: #404bbf;
+}
+
+.item-active::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+    color: #404bbf;
+}
+
+.address-link {
+    display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    color: #434455;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: #404bbf;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
     .start {
         padding: 112px 0;
         max-width: 768px;
@@ -956,6 +995,30 @@ min-width: 264px;
     .section {
         padding: 120px 0;
     }
+
+    .logo {
+        margin-right: 76px;
+    }
+
+    .address-item {
+        padding: 24px 0px;
+    }
+
+        .item-active::after {
+            bottom: -3px;
+        }
+
+.address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 
 .start {
     padding: 188px 0;
