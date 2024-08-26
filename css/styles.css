@@ -174,7 +174,7 @@ h3 {
     max-width: 1440px;
     margin: 0 auto;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -835,14 +835,22 @@ fill: #f4f4fd;
     .start {
         padding: 112px 0;
     }
+        
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .start {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob@2x.jpg);
+            }
+        }
 
-        .start-name {
-            font-size: 56px;
-            line-height: 1.07;
-            max-width: 496px;
-            text-align: center;
-            color: #fff;
-            margin-bottom: 36px;
+    .start-name {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 36px;
         }
 
     .features-list {
@@ -920,7 +928,6 @@ fill: #f4f4fd;
 min-width: 264px;
 }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .team .container {
