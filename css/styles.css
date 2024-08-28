@@ -27,20 +27,6 @@ img {
     margin: 0 auto;
 }
 
-/* @media screen and (min-width: 768px) {
-    .container {
-            max-width: 768px;
-        }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-    max-width: 1158px;
-    padding: 0 15px;
-}
-} */
-
-
 .section {
     display: flex;
     justify-content: center;
@@ -1043,6 +1029,10 @@ fill: #f4f4fd;
         width: calc((100% - 24px) / 2);
     }
 
+    .features {
+        text-align: left;
+    }
+
         .team-list {
             row-gap: 64px;
             column-gap: 24px;
@@ -1185,7 +1175,6 @@ margin-bottom: 48px;
             font-weight: 500;
                 font-size: 20px;
                 line-height: 1.2;
-                text-align: left;
         }
 
         .features-description {
